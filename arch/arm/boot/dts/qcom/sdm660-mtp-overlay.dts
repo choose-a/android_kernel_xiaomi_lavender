@@ -21,7 +21,7 @@
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
 
-#include "sdm660-vts.dtsi"
+//#include "sdm660-vts.dtsi"
 
 / {
 	model = "Qualcomm Technologies, Inc. SDM 660 PM660 + PM660L MTP F7A overlay";

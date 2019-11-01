@@ -14,4 +14,3 @@
 &slim_aud {
 	status = "disabled";
 };
-
