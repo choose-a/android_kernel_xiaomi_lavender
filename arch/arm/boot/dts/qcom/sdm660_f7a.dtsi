@@ -33,7 +33,7 @@
 
 			fstab {
 				vendor {
-					fsmgr_flags = "wait,avb";
+					fsmgr_flags = "wait";
 				};
 			};
 		};
@@ -43,8 +43,6 @@
 		cont_splash_mem: splash_region@9d400000 {
 			reg = <0x0 0x9d400000 0x0 0x02400000>;
 		};
-
-		/delete-node/ dfps_data_mem;
 
 		pstore_reserve_mem: pstore_reserve_mem_region@0 {
 			linux,reserve-contiguous-region;
