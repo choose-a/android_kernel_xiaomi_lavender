@@ -15,6 +15,7 @@
 /dts-v1/;
 
 #include "sdm660_f7a.dtsi"
+#include "sdm660-mtp.dtsi"
 #include "sdm660-mtp_f7a.dtsi"
 //#include "sdm660-mtp.dtsi"
 //#include "sdm660-external-codec.dtsi"

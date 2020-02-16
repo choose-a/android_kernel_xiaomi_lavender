@@ -52,7 +52,9 @@
 			label = "pstore_reserve_mem";
 		};
 	};
+};
 
+&soc {
         /delete-node/ qcom,qbt1000;
 
 	qcom,sensor-information {
@@ -70,9 +72,7 @@
 		reg-names = "rmtfs";
 		qcom,client-id = <0x00000001>;
 	};
-};
 
-&soc {
 	qseecom@86d00000 {
 		qcom,qsee-reentrancy-support = <0>;
 	};

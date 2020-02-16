@@ -11,7 +11,6 @@
  * GNU General Public License for more details.
  */
 
-#include "sdm660-mtp.dtsi"
 #include "sdm660-pinctrl.dtsi"
 #include "sdm660-camera-sensor-mtp_f7a.dtsi"
 #include "sdm660-novatek-i2c_f7a.dtsi"
@@ -83,15 +82,15 @@
 &soc {
 
 	goodix_fp {
-	compatible = "goodix,fingerprint";
-	interrupt-parent = <&tlmm>;
-	interrupt = <72 0x0>;
-	vcc_spi-supply = <&pm660l_l3>;
-	vcc_ana-supply = <&pm660l_l3>;
-	vdd_io-supply = <&pm660l_l3>;
-	fp-gpio-irq = <&tlmm 72 0x00>;
-	fp-gpio-reset = <&tlmm 20 0x00>;
-	status = "okay";
+		compatible = "goodix,fingerprint";
+		interrupt-parent = <&tlmm>;
+		interrupt = <72 0x0>;
+		vcc_spi-supply = <&pm660l_l3>;
+		vcc_ana-supply = <&pm660l_l3>;
+		vdd_io-supply = <&pm660l_l3>;
+		fp-gpio-irq = <&tlmm 72 0x00>;
+		fp-gpio-reset = <&tlmm 20 0x00>;
+		status = "okay";
 	};
 
 	fpc1020 {
@@ -116,7 +115,7 @@
 
 	ant_check {
 		compatible = "ant_check";
-	        ant_check_gpio = <&tlmm 74 0x0>;
+		ant_check_gpio = <&tlmm 74 0x0>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&ant_check_default>;
 	};
