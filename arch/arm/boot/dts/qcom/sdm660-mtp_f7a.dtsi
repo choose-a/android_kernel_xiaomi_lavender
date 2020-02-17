@@ -16,6 +16,7 @@
 #include "sdm660-novatek-i2c_f7a.dtsi"
 #include "sdm660-synaptics-tcm-i2c_f7a.dtsi"
 #include "sdm660-audio_f7a.dtsi"
+#include "sdm660-mdss-panels_f7a.dtsi"
 
 / {
 	mtp_batterydata: qcom,battery-data {
